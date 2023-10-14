@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+section {
+    text-align: center;
+    margin-top: 40px;
+}
+p {
+    font-size: 20px;
+    /* Todos tienen 50px de arriba y abjo todos */
+    /* margin-top: 50px; */
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+/* selector de hermanos generales */
+/* slsecionamos a todos hermanos adyacenes que sean parafos dentro de section */
+.titulo ~ p {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+section{
+    width: max-content;
+    margin: 30px auto;
+}
