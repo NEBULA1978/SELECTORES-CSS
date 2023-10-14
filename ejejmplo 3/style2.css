@@ -9,26 +9,6 @@ body {
 
 
 
-section {
-    width: max-content;
-    margin: 10px auto;
-}
-
-label {
-    background-color: crimson;
-    color: white;
-    width: 200px;
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-    margin-bottom: 30px;
-    cursor: pointer;
-    align-items: center; /* Center vertically within the label */
-}
-/* input {
-    display: none;
-} */
 
 .box {
     width: 200px;
@@ -37,10 +17,16 @@ label {
     transition: .4s;
 }
 
+/* selector de hijo directo > el select universal el selector de hermano adyacente y select universal */
+/* seleccionar todos elementos dentro section pero hermanos adyacentes */
+/* separados 40px menos el primero */
+section > * + *{
+    margin-top: 40px;
+}
 
-
-/* cuando input activo seleccionamos su hermano adyacente que es la caja */
-input:checked+.box{
-    /* -200px gira a la izquierda y sin - a la derecha */
-    transform: translate(-200px) rotate(80deg) scale(2);
+p {
+    font-size: 20px;
+    /* Todos tienen 50px de arriba y abjo todos */
+    /* margin-top: 50px; */
+    text-align: center;
 }
