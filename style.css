@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* selecciona todos los p dentre de section y fuera */
+/* p{
+    color: white;
+    background-color: black;
+} */
+
+/* selector adyacente */
+/* Seleccionamos lo p dentro de sections diferentes pero misma clase p*/
+.titulo + p {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+}
