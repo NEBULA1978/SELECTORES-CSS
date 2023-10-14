@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+section {
+    width: max-content;
+    margin: 10px auto;
+}
+
+label {
+    background-color: crimson;
+    color: white;
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    /* Align to the left */
+    margin-bottom: 30px;
+    cursor: pointer;
+    align-items: center;
+    /* Center vertically within the label */
+}
+
+/* input {
+    display: none;
+} */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    transition: .4s;
+    /* Me cambia la caja roja a la izquierda */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* Center the box */
+}
+
+input[type="checkbox"] {
+    margin: 0 auto;
+    /* Center horizontally */
+    display: block;
+    /* Make it a block-level element for margin to work */
+}
+
+/* cuando input activo seleccionamos su hermano adyacente que es la caja */
+input:checked+label {
+    /* -200px gira a la izquierda y sin - a la derecha */
+    /* transform: translate(-200px) rotate(80deg) scale(2); */
+
+    /* diferente arriba */
+    background-color: seagreen;
+}
+/* cuando input activo selecciona asu hermano con la clase box */
+input:checked~.box{
+    transform: translateY(200px) rotate(80deg) scale(2);
+
+}
+
+/* cuando input activo seleccionamos su hermano adyacente que es la caja */
+/* input:checked+.box { */
+/* -200px gira a la izquierda y sin - a la derecha */
+/* transform: translate(-200px) rotate(80deg) scale(2); */
+
+/* diferente arriba */
+/* transform: translateY(200px) rotate(80deg) scale(2);
+} */
