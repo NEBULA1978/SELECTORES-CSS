@@ -34,6 +34,17 @@ label {
 } */
 
 .box {
+    position: relative;
+    /* nos desplaza hacia abajo pero su posicion original sedigue conservando */
+    /* cualquier elelemnto que posicionemos debajo de el se va a posicionar sobre su posicion original, no donde esta actualmente */
+    /* separa todas las cajas hacia abajo */
+    top: 40px;
+    /* separacion entre la cajas */
+    margin-top: 20px;
+    right: 30px;
+    left: 20px;
+    
+
     width: 200px;
     height: 200px;
     background-color: tomato;
