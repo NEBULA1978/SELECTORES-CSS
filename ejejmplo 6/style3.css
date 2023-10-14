@@ -55,7 +55,7 @@ label {
     /* Center the box */
 }
 .rojo{
-    position: relative;
+    position: absolute;
     /* nos desplaza hacia abajo pero su posicion original sedigue conservando */
     /* cualquier elelemnto que posicionemos debajo de el se va a posicionar sobre su posicion original, no donde esta actualmente */
     /* separa todas las cajas hacia abajo */
